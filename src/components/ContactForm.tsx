@@ -76,7 +76,7 @@ const ContactForm = ({ sector, variant = "light" }: Props) => {
       <div className="grid md:grid-cols-2 gap-7">
         <div>
           <label className={labelBase} htmlFor="factory">Factory name *</label>
-          <input id="factory" name="factory" required maxLength={100} className={inputBase} placeholder="e.g. ABC Textiles" />
+          <input id="factory" name="factory" required maxLength={100} className={inputBase} placeholder="e.g. Shivam Textiles" />
         </div>
         <div>
           <label className={labelBase} htmlFor="name">Your name *</label>

@@ -46,14 +46,14 @@ const IndustryPage = () => {
           </Link>
           <p className="eyebrow-on-ink mb-6 fade-up">Sector — {ind.name}</p>
           <h1 className="display-1 max-w-4xl fade-up" style={{ animationDelay: "0.1s" }}>
-            Your {ind.name.toLowerCase()} factory is either earning <em className="not-italic" style={{ color: "hsl(var(--accent-glow))" }}>{ind.earningValue}</em> — or losing <em className="not-italic" style={{ color: "hsl(var(--accent-glow))" }}>{ind.savingValue}</em>.
+            Your {ind.name.toLowerCase()} facility carries an emissions profile. <em className="not-italic" style={{ color: "hsl(var(--accent-glow))" }}>Have you quantified it?</em>
           </h1>
           <p className="lead lead-on-ink mt-8 max-w-2xl fade-up" style={{ animationDelay: "0.2s" }}>
-            You don't know which one. Yet.
+            It could outperform the benchmark — or significantly exceed it. Let’s establish the facts.
           </p>
           <div className="mt-12 fade-up" style={{ animationDelay: "0.3s" }}>
             <a href="#contact" className="btn-primary">
-              Discover your {ind.name.toLowerCase()} opportunity <ArrowRight className="w-4 h-4" />
+              Assess your {ind.name.toLowerCase()} emission intensity <ArrowRight className="w-4 h-4" />
             </a>
           </div>
         </div>
@@ -63,36 +63,36 @@ const IndustryPage = () => {
       <section className="py-24 md:py-36">
         <div className="container-wide">
           <div className="text-center mb-20 max-w-2xl mx-auto">
-            <p className="eyebrow mb-6">The two outcomes</p>
-            <h2 className="display-2">Above the line. Or below it.</h2>
+            <p className="eyebrow mb-6">The two compliance scenarios</p>
+            <h2 className="display-2">Above the benchmark. Or below it.</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-px bg-border">
             <article className="bg-background p-8 md:p-12">
-              <div className="mono-label mb-4">If you're efficient</div>
+              <div className="mono-label mb-4">If you're operationally efficient</div>
               <h3 className="display-3 mb-6">{ind.earningHeadline}</h3>
               <div className="stat-number mb-4" style={{ color: "hsl(var(--accent))" }}>{ind.earningValue}</div>
               <p className="text-foreground leading-relaxed mb-8">{ind.earningDescription}</p>
-              <div className="mono-label">Right now: unknown · Losing this</div>
+              <div className="mono-label">Right now: unknown · Unrecognised green effort</div>
             </article>
             <article className="bg-background p-8 md:p-12">
-              <div className="mono-label mb-4">If you're not</div>
-              <h3 className="display-3 mb-6">The Saving Opportunity</h3>
+              <div className="mono-label mb-4">If you exceed the threshold</div>
+              <h3 className="display-3 mb-6">The Reduction Opportunity</h3>
               <div className="stat-number mb-4" style={{ color: "hsl(var(--accent))" }}>{ind.savingValue}</div>
               <p className="text-foreground leading-relaxed mb-8">{ind.savingDescription}</p>
-              <div className="mono-label">Right now: unknown · Burning this</div>
+              <div className="mono-label">Right now: unknown · Avoidable emissions</div>
             </article>
           </div>
         </div>
       </section>
 
-      {/* S03 — WHERE YOU LOSE MONEY */}
+      {/* S03 — WHERE EMISSIONS HIDE */}
       <section className="section-ink py-24 md:py-36">
         <div className="container-wide">
           <div className="mb-20 max-w-2xl">
             <p className="eyebrow-on-ink mb-6">The blind spots</p>
             <h2 className="display-2 text-ink-foreground">
-              Where {ind.name.toLowerCase()} factories lose money — and don't know it.
+              Where {ind.name.toLowerCase()} facilities generate the highest emission intensity — undetected.
             </h2>
           </div>
 
@@ -101,7 +101,7 @@ const IndustryPage = () => {
               <div key={l.title} className="bg-ink p-8 md:p-10">
                 <div className="flex items-start justify-between mb-6">
                   <span className="font-mono text-xs tracking-[0.2em] text-ink-muted">
-                    LOSS {String(i + 1).padStart(2, "0")}
+                    SOURCE {String(i + 1).padStart(2, "0")}
                   </span>
                   <Flame className="w-5 h-5 text-accent-glow" strokeWidth={1.25} />
                 </div>
@@ -121,7 +121,7 @@ const IndustryPage = () => {
         <div className="container-wide">
           <div className="text-center mb-20 max-w-2xl mx-auto">
             <p className="eyebrow mb-6">The process</p>
-            <h2 className="display-2">Our 6-week measurement.</h2>
+            <h2 className="display-2">Our 6-week MRV engagement.</h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
@@ -160,15 +160,15 @@ const IndustryPage = () => {
                 </div>
                 <span className="mono-label">Scenario A · Below target</span>
               </div>
-              <h3 className="display-3 mb-8">"You're efficient."</h3>
+              <h3 className="display-3 mb-8">"Operationally efficient."</h3>
               <dl className="space-y-5 text-sm border-t hairline pt-8">
                 <div className="flex justify-between gap-6"><dt className="text-muted-foreground">Your GEI</dt><dd className="font-mono">6.8 {ind.unit.split(" / ")[1] ? "" : ""}</dd></div>
                 <div className="flex justify-between gap-6"><dt className="text-muted-foreground">BEE Target</dt><dd className="font-mono">7.06</dd></div>
                 <div className="flex justify-between gap-6"><dt className="text-muted-foreground">Status</dt><dd className="font-medium" style={{ color: "hsl(var(--accent))" }}>✓ Below target</dd></div>
-                <div className="flex justify-between gap-6"><dt className="text-muted-foreground">Opportunity</dt><dd className="font-medium">{ind.earningValue} in credits</dd></div>
+                <div className="flex justify-between gap-6"><dt className="text-muted-foreground">Impact</dt><dd className="font-medium">Carbon Positive — eligible for credits</dd></div>
               </dl>
               <p className="mt-8 text-sm text-muted-foreground">
-                <span className="text-foreground">Next step:</span> we show you exactly how to monetise the surplus on Indian and voluntary markets.
+                <span className="text-foreground">Next step:</span> we show you how your surplus contributes to India's climate goals and how to leverage it.
               </p>
             </article>
 
@@ -180,15 +180,15 @@ const IndustryPage = () => {
                 </div>
                 <span className="mono-label">Scenario B · Above target</span>
               </div>
-              <h3 className="display-3 mb-8">"Room to improve."</h3>
+              <h3 className="display-3 mb-8">"Scope for abatement."</h3>
               <dl className="space-y-5 text-sm border-t hairline pt-8">
                 <div className="flex justify-between gap-6"><dt className="text-muted-foreground">Your GEI</dt><dd className="font-mono">8.2</dd></div>
                 <div className="flex justify-between gap-6"><dt className="text-muted-foreground">BEE Target</dt><dd className="font-mono">7.06</dd></div>
                 <div className="flex justify-between gap-6"><dt className="text-muted-foreground">Status</dt><dd className="font-medium text-foreground">✗ Above target — risk zone</dd></div>
-                <div className="flex justify-between gap-6"><dt className="text-muted-foreground">Opportunity</dt><dd className="font-medium">{ind.savingValue} in savings</dd></div>
+                <div className="flex justify-between gap-6"><dt className="text-muted-foreground">Opportunity</dt><dd className="font-medium">Significant emission reduction potential</dd></div>
               </dl>
               <p className="mt-8 text-sm text-muted-foreground">
-                <span className="text-foreground">Next step:</span> a sequenced energy roadmap that drops your GEI below target and cuts your bill.
+                <span className="text-foreground">Next step:</span> a sequenced decarbonisation roadmap that drops your GEI below target and shrinks your footprint.
               </p>
             </article>
           </div>
@@ -200,17 +200,17 @@ const IndustryPage = () => {
         <div className="container-editorial">
           <p className="eyebrow mb-6">A real engagement</p>
           <h2 className="display-2 mb-12 max-w-3xl">
-            What we found inside a real {ind.name.toLowerCase()} factory.
+            What our audit revealed inside an operational {ind.name.toLowerCase()} facility.
           </h2>
 
           <div className="grid md:grid-cols-12 gap-12 items-start">
             <div className="md:col-span-7 space-y-6 text-lg leading-relaxed">
               <p>
                 <span className="font-medium">{cs.name}</span>, {cs.location}.
-                {" "}{cs.scale}. When we walked in, they had no idea where they stood
-                on emissions.
+                {" "}{cs.scale}. At the point of engagement, they had zero visibility into their
+                emission intensity position.
               </p>
-              <p className="text-muted-foreground">What we found:</p>
+              <p className="text-muted-foreground">Key findings:</p>
               <ul className="space-y-3 text-base">
                 {cs.findings.map((f) => (
                   <li key={f} className="flex gap-4">
@@ -238,11 +238,11 @@ const IndustryPage = () => {
               <div className="grid grid-cols-2 gap-px mt-8 bg-border">
                 <div className="bg-background p-5">
                   <div className="mono-label mb-2">Before</div>
-                  <p className="font-serif text-base">Blind</p>
+                  <p className="font-serif text-base">Unquantified</p>
                 </div>
                 <div className="bg-background p-5">
                   <div className="mono-label mb-2">After</div>
-                  <p className="font-serif text-base">Clear</p>
+                  <p className="font-serif text-base">Verified</p>
                 </div>
               </div>
             </aside>
@@ -253,15 +253,15 @@ const IndustryPage = () => {
       {/* S07 — WHY IT MATTERS */}
       <section className="section-ink py-24 md:py-32">
         <div className="container-editorial">
-          <p className="eyebrow-on-ink mb-6">The cost of not measuring</p>
+          <p className="eyebrow-on-ink mb-6">The cost of inaction</p>
           <h2 className="display-2 text-ink-foreground mb-16 max-w-2xl">
-            Three ways inaction quietly costs you.
+            Three ways operational inaction compounds environmental liability.
           </h2>
           <div className="grid md:grid-cols-3 gap-px bg-hairline">
             {[
-              { icon: Flame, title: "Lost earning", text: `If you're efficient, you don't know it. ${ind.earningValue} in unrealised credit revenue, every year.` },
-              { icon: AlertTriangle, title: "Lost saving", text: `If you have waste, you can't see it. ${ind.savingValue} burning in your boilers, compressors and exhausts.` },
-              { icon: Clock, title: "Lost time", text: "Compliance hits in 90 days. Acting now is strategic. Acting later is forced." },
+              { icon: Flame, title: "Unverified reductions", text: `If you're operationally efficient, it remains unsubstantiated — and your decarbonisation contribution goes unmonetised.` },
+              { icon: AlertTriangle, title: "Fugitive emissions", text: `Undetected process losses persist. Avoidable CO₂e is discharged through boilers, compressors and exhaust systems daily.` },
+              { icon: Clock, title: "Regulatory urgency", text: "Compliance obligations activate in 90 days. Proactive engagement is strategic. Delayed response is compulsory." },
             ].map(({ icon: Icon, title, text }) => (
               <div key={title} className="bg-ink p-8 md:p-10">
                 <Icon className="w-7 h-7 mb-6 text-accent-glow" strokeWidth={1.25} />
@@ -277,11 +277,11 @@ const IndustryPage = () => {
       <section id="contact" className="py-24 md:py-32 bg-secondary">
         <div className="container-editorial grid md:grid-cols-12 gap-16">
           <div className="md:col-span-5">
-            <p className="eyebrow mb-6">Discovery call</p>
-            <h2 className="display-2 mb-6">Let's find out what your {ind.name.toLowerCase()} factory is losing.</h2>
+            <p className="eyebrow mb-6">Preliminary Assessment</p>
+            <h2 className="display-2 mb-6">Let’s quantify your {ind.name.toLowerCase()} facility’s emission intensity.</h2>
             <p className="lead">
-              30 minutes, by WhatsApp or phone. We'll map out exactly what an MRV
-              would uncover for your facility.
+              30 minutes, by WhatsApp or phone. We’ll scope your facility’s MRV requirements
+              and outline what a full engagement would reveal.
             </p>
           </div>
           <div className="md:col-span-7">

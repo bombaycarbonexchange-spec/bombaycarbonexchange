@@ -50,7 +50,7 @@ const SiteHeader = () => {
               onDark ? "text-ink-foreground/80" : "text-muted-foreground"
             }`}
           >
-            Process
+            Methodology
           </a>
           <a
             href="/#contact"
@@ -62,7 +62,7 @@ const SiteHeader = () => {
           </a>
         </nav>
         <a href="/#contact" className="btn-primary !px-5 !py-3 hidden sm:inline-flex">
-          Discover
+          Assess
         </a>
       </div>
     </header>

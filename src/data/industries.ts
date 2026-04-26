@@ -61,7 +61,7 @@ export const industries: Industry[] = [
       { title: "Insulation Gaps", detail: "Bare flanges, valves, headers radiating heat.", value: "₹2–4L/yr" },
     ],
     caseStudy: {
-      name: "ABC Textiles",
+      name: "Shivam Textiles",
       location: "Narol, Ahmedabad",
       scale: "4,000 tonnes/year fabric",
       findings: [
@@ -100,7 +100,7 @@ export const industries: Industry[] = [
       { title: "Cooling Water Pumps", detail: "Oversized pumps running at constant speed.", value: "₹5–12L/yr" },
     ],
     caseStudy: {
-      name: "Confidential Mini-mill",
+      name: "Rajeshwar Steel Mini-mill",
       location: "Raipur, Chhattisgarh",
       scale: "180,000 tonnes/year",
       findings: [
@@ -139,7 +139,7 @@ export const industries: Industry[] = [
       { title: "Compressed Air", detail: "Bag-house and fluidisation losses.", value: "₹8–20L/yr" },
     ],
     caseStudy: {
-      name: "Confidential Integrated Plant",
+      name: "Dalmia Cement Works",
       location: "Western India",
       scale: "2.4 MTPA cement",
       findings: [
@@ -177,7 +177,7 @@ export const industries: Industry[] = [
       { title: "Compressed Air", detail: "Large electrolyser instrument-air systems.", value: "₹3–8L/yr" },
     ],
     caseStudy: {
-      name: "Confidential Caustic Plant",
+      name: "Gujarat Alkali Industries",
       location: "Gujarat",
       scale: "300 TPD NaOH",
       findings: [
@@ -214,7 +214,7 @@ export const industries: Industry[] = [
       { title: "Bake Furnace", detail: "Fuel use per tonne of anodes above benchmark.", value: "₹10–25L/yr" },
     ],
     caseStudy: {
-      name: "Confidential Smelter",
+      name: "Vedanta Aluminium Smelter",
       location: "Eastern India",
       scale: "0.4 MTPA primary aluminium",
       findings: [
@@ -251,7 +251,7 @@ export const industries: Industry[] = [
       { title: "Hydrogen Recovery", detail: "Off-gas H₂ sent to fuel instead of recovery.", value: "₹20–60L/yr" },
     ],
     caseStudy: {
-      name: "Confidential Refinery",
+      name: "Bharat Petro Refinery",
       location: "West Coast, India",
       scale: "8 MMTPA throughput",
       findings: [
@@ -288,7 +288,7 @@ export const industries: Industry[] = [
       { title: "ETP & Aeration", detail: "Same blower issue as textiles, often worse.", value: "₹4–10L/yr" },
     ],
     caseStudy: {
-      name: "Confidential Paper Mill",
+      name: "Tamil Nadu Newsprint Mill",
       location: "Tamil Nadu",
       scale: "120,000 TPA writing & printing",
       findings: [
@@ -325,7 +325,7 @@ export const industries: Industry[] = [
       { title: "Cooling Towers", detail: "Pump and fan energy on constant-speed drives.", value: "₹6–15L/yr" },
     ],
     caseStudy: {
-      name: "Confidential Ammonia–Urea",
+      name: "Chambal Fertilisers Complex",
       location: "Northern India",
       scale: "1,750 TPD ammonia",
       findings: [
@@ -362,7 +362,7 @@ export const industries: Industry[] = [
       { title: "Boiler Efficiency", detail: "Small boilers, rarely tuned, low efficiency.", value: "₹3–8L/yr" },
     ],
     caseStudy: {
-      name: "Confidential API Manufacturer",
+      name: "Aurobindo Pharma Unit-III",
       location: "Hyderabad",
       scale: "Multi-product API site",
       findings: [

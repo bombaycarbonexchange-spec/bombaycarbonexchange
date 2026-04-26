@@ -9,11 +9,11 @@ const SiteFooter = () => {
           <div className="md:col-span-5">
             <div className="eyebrow-on-ink mb-4">Bombay Carbon Exchange</div>
             <h3 className="display-3 text-ink-foreground mb-6 max-w-md">
-              MRV audits, CCTS strategy and carbon credit advisory for Indian factories.
+              MRV audits, CCTS compliance strategy and carbon credit advisory for Indian industrial facilities.
             </h3>
             <p className="text-ink-muted leading-relaxed max-w-md">
-              We measure what your factory actually emits — then tell you whether you're
-              earning credits or burning energy. Either way, you stop being blind.
+              We measure what your factory actually emits — then show you the path to
+              reducing your carbon footprint. Either way, you stop being blind.
             </p>
           </div>
 
@@ -59,7 +59,7 @@ const SiteFooter = () => {
                 <a href="mailto:hello@bombaycarbon.exchange" className="link-underline">Email</a>
               </li>
               <li>
-                <a href="https://instagram.com" className="link-underline">Instagram</a>
+                <a href="https://linkedin.com/company/bombaycarbonexchange" className="link-underline">LinkedIn</a>
               </li>
             </ul>
           </div>
