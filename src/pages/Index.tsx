@@ -7,9 +7,9 @@ import { industries } from "@/data/industries";
 import heroImg from "@/assets/hero-factory-dusk.jpg";
 import earnImg from "@/assets/opportunity-earning.jpg";
 import saveImg from "@/assets/opportunity-saving.jpg";
-import measureImg from "@/assets/process-measure.jpg";
-import reportImg from "@/assets/process-report.jpg";
-import adviseImg from "@/assets/process-advise.jpg";
+import measureImg from "@/assets/img_5860.png";
+import reportImg from "@/assets/img_5859.png";
+import adviseImg from "@/assets/img_5862.png";
 
 const Index = () => {
   return (
@@ -29,7 +29,7 @@ const Index = () => {
         <div className="relative z-10 h-full container-editorial flex flex-col justify-center text-center text-ink-foreground pt-20">
           <p className="eyebrow-on-ink mb-8 fade-up">Bombay Carbon Exchange</p>
           <h1 className="display-1 mx-auto max-w-4xl fade-up" style={{ animationDelay: "0.1s" }}>
-            The environment can't wait. <em className="not-italic" style={{ color: "hsl(var(--accent-glow))" }}>Neither should you.</em>
+            The environment can't wait. Neither should you.
           </h1>
           <p className="lead lead-on-ink mt-8 mx-auto max-w-2xl fade-up" style={{ animationDelay: "0.2s" }}>
             Every industrial facility carries an emissions profile. Yours could be leaner than projected — or critically over-baseline.
