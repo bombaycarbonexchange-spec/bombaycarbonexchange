@@ -2,7 +2,6 @@ import { Link, useParams, Navigate } from "react-router-dom";
 import { ArrowRight, ArrowLeft, Check, X, Clock, Flame, AlertTriangle } from "lucide-react";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
-import ContactForm from "@/components/ContactForm";
 import { getIndustry, industries } from "@/data/industries";
 import measureImg from "@/assets/process-measure.jpg";
 import reportImg from "@/assets/process-report.jpg";
@@ -284,8 +283,19 @@ const IndustryPage = () => {
               and outline what a full engagement would reveal.
             </p>
           </div>
-          <div className="md:col-span-7">
-            <ContactForm sector={ind.name} />
+          <div className="md:col-span-7 flex flex-col justify-center">
+            <a 
+              href="https://wa.me/919429508978?text=Hello%20Bombay%20Carbon%20Exchange,%20%0A%0AI%E2%80%99d%20like%20to%20inquire%20about%20a%20preliminary%20assessment%20for%20my%20facility.%20Could%20you%20guide%20me%20on%20the%20next%20steps%20and%20how%20we%20can%20start%20identifying%20opportunities%20to%20reduce%20costs%20and%20improve%20efficiency?" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn-primary !px-10 !py-6 text-sm md:text-base w-full md:w-fit text-center"
+            >
+              Inquire Now
+            </a>
+            <p className="mt-6 text-sm text-muted-foreground flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+              Typical response time: <span className="text-foreground font-medium">under 60 minutes</span>
+            </p>
           </div>
         </div>
       </section>

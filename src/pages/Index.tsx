@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { ArrowRight, AlertTriangle, Clock, Compass, Puzzle, ShieldCheck } from "lucide-react";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
-import ContactForm from "@/components/ContactForm";
 import { industries } from "@/data/industries";
 import heroImg from "@/assets/hero-factory-dusk.jpg";
 import earnImg from "@/assets/opportunity-earning.jpg";
@@ -10,6 +9,7 @@ import saveImg from "@/assets/opportunity-saving.jpg";
 import measureImg from "@/assets/img_5860.png";
 import reportImg from "@/assets/img_5859.png";
 import adviseImg from "@/assets/img_5862.png";
+import logo from "@/assets/IMG_5946.png";
 
 const Index = () => {
   return (
@@ -26,18 +26,23 @@ const Index = () => {
           className="absolute inset-0 w-full h-full object-cover img-editorial"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-ink/60 via-ink/55 to-ink/85" />
-        <div className="relative z-10 h-full container-editorial flex flex-col justify-center text-center text-ink-foreground pt-20">
+        <div className="relative z-10 h-full container-editorial flex flex-col justify-center text-center text-ink-foreground">
           <p className="eyebrow-on-ink mb-8 fade-up">Bombay Carbon Exchange</p>
-          <h1 className="display-1 mx-auto max-w-4xl fade-up" style={{ animationDelay: "0.1s" }}>
-            The environment can't wait. Neither should you.
+          <h1 className="mx-auto max-w-5xl fade-up flex flex-col gap-3 md:gap-4" style={{ animationDelay: "0.1s" }}>
+            <span className="display-1 block">
+              You are losing money <span className="text-accent-glow/60">right now.</span>
+            </span>
+            <span className="display-3 block text-ink-foreground/80 font-normal">
+              Get ready before the <span className="text-accent-glow/60">compliance hits.</span>
+            </span>
           </h1>
           <p className="lead lead-on-ink mt-8 mx-auto max-w-2xl fade-up" style={{ animationDelay: "0.2s" }}>
-            Every industrial facility carries an emissions profile. Yours could be leaner than projected — or critically over-baseline.
-            The only way to know is to quantify.
+            Either ₹20L/year you could be earning. Or ₹50L/year you could be saving.
+            You'll never know which one until you measure.
           </p>
           <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center fade-up" style={{ animationDelay: "0.3s" }}>
             <a href="#sectors" className="btn-primary">
-              Assess your emissions profile <ArrowRight className="w-4 h-4" />
+              Discover your opportunity <ArrowRight className="w-4 h-4" />
             </a>
             <a href="#process" className="btn-ghost">Our methodology</a>
           </div>
@@ -315,8 +320,19 @@ const Index = () => {
               reveal.
             </p>
           </div>
-          <div className="md:col-span-7">
-            <ContactForm />
+          <div className="md:col-span-7 flex flex-col justify-center">
+            <a 
+              href="https://wa.me/919429508978?text=Hello%20Bombay%20Carbon%20Exchange,%20%0A%0AI%E2%80%99d%20like%20to%20inquire%20about%20a%20preliminary%20assessment%20for%20my%20facility.%20Could%20you%20guide%20me%20on%20the%20next%20steps%20and%20how%20we%20can%20start%20identifying%20opportunities%20to%20reduce%20costs%20and%20improve%20efficiency?" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn-primary !px-10 !py-6 text-sm md:text-base w-full md:w-fit text-center"
+            >
+              Inquire Now
+            </a>
+            <p className="mt-6 text-sm text-muted-foreground flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+              Typical response time: <span className="text-foreground font-medium">under 60 minutes</span>
+            </p>
           </div>
         </div>
       </section>
