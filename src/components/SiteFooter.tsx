@@ -61,10 +61,10 @@ const SiteFooter = () => {
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="link-underline">WhatsApp</a>
               </li>
               <li>
-                <a href="mailto:hello@bombaycarbon.exchange" className="link-underline">Email</a>
+                <a href="mailto:Inquiry.bombaycarbonexchange@gmail.com" className="link-underline">Email</a>
               </li>
               <li>
-                <a href="https://linkedin.com/company/bombaycarbonexchange" target="_blank" rel="noopener noreferrer" className="link-underline">LinkedIn</a>
+                <a href="https://www.instagram.com/bombaycarbonx?igsh=MXJ2dzhzcmliNDZsNA==" target="_blank" rel="noopener noreferrer" className="link-underline">Instagram</a>
               </li>
             </ul>
           </div>
