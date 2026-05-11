@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { industries } from "@/data/industries";
-import logo from "@/assets/IMG_5946.png";
+import logo from "@/assets/bcx-logo.png";
 
 const SiteFooter = () => {
-  const whatsappUrl = "https://wa.me/919429508978?text=Hello%20Bombay%20Carbon%20Exchange,%20%0A%0AI%E2%80%99d%20like%20to%20inquire%20about%20a%20preliminary%20assessment%20for%20my%20facility.%20Could%20you%20guide%20me%20on%20the%20next%20steps%20and%20how%20we%20can%20start%20identifying%20opportunities%20to%20reduce%20costs%20and%20improve%20efficiency?";
+  const whatsappUrl = "https://wa.me/919274708978?text=Hello%20Bombay%20Carbon%20Exchange,%20%0A%0AI%E2%80%99d%20like%20to%20inquire%20about%20a%20preliminary%20assessment%20for%20my%20facility.%20Could%20you%20guide%20me%20on%20the%20next%20steps%20and%20how%20we%20can%20start%20identifying%20opportunities%20to%20reduce%20costs%20and%20improve%20efficiency?";
 
   return (
     <footer className="section-ink border-t hairline-ink">
@@ -61,7 +61,7 @@ const SiteFooter = () => {
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="link-underline">WhatsApp</a>
               </li>
               <li>
-                <a href="mailto:Inquiry.bombaycarbonexchange@gmail.com" className="link-underline">Email</a>
+                <a href="mailto:diggajshah@bombaycarbonexchange.com" className="link-underline">Email</a>
               </li>
               <li>
                 <a href="https://www.instagram.com/bombaycarbonx?igsh=MXJ2dzhzcmliNDZsNA==" target="_blank" rel="noopener noreferrer" className="link-underline">Instagram</a>

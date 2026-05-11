@@ -10,7 +10,7 @@ import saveImg from "@/assets/opportunity-saving.jpg";
 import measureImg from "@/assets/img_5860.png";
 import reportImg from "@/assets/img_5859.png";
 import adviseImg from "@/assets/img_5862.png";
-import logo from "@/assets/IMG_5946.png";
+import logo from "@/assets/bcx-logo.png";
 
 const Index = () => {
   return (
@@ -323,7 +323,7 @@ const Index = () => {
           </div>
           <div className="md:col-span-7 flex flex-col justify-center">
             <a 
-              href="https://wa.me/919429508978?text=Hello%20Bombay%20Carbon%20Exchange,%20%0A%0AI%E2%80%99d%20like%20to%20inquire%20about%20a%20preliminary%20assessment%20for%20my%20facility.%20Could%20you%20guide%20me%20on%20the%20next%20steps%20and%20how%20we%20can%20start%20identifying%20opportunities%20to%20reduce%20costs%20and%20improve%20efficiency?" 
+              href="https://wa.me/919274708978?text=Hello%20Bombay%20Carbon%20Exchange,%20%0A%0AI%E2%80%99d%20like%20to%20inquire%20about%20a%20preliminary%20assessment%20for%20my%20facility.%20Could%20you%20guide%20me%20on%20the%20next%20steps%20and%20how%20we%20can%20start%20identifying%20opportunities%20to%20reduce%20costs%20and%20improve%20efficiency?" 
               target="_blank" 
               rel="noopener noreferrer"
               className="btn-primary !px-10 !py-6 text-sm md:text-base w-full md:w-fit text-center"

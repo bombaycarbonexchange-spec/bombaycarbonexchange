@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
-import logo from "@/assets/IMG_5946.png";
+import logo from "@/assets/bcx-logo.png";
 
 const SiteHeader = () => {
   const location = useLocation();
